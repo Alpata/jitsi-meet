@@ -625,14 +625,6 @@ var config = {
     // Disables or enables REMB support in this client (default: enabled).
     // enableRemb: true,
 
-    // Enables ICE restart logic in LJM and displays the page reload overlay on
-    // ICE failure. Current disabled by default because it's causing issues with
-    // signaling when Octo is enabled. Also when we do an "ICE restart"(which is
-    // not a real ICE restart), the client maintains the TCC sequence number
-    // counter, but the bridge resets it. The bridge sends media packets with
-    // TCC sequence numbers starting from 0.
-    // enableIceRestart: false,
-
     // Enables forced reload of the client when the call is migrated as a result of
     // the bridge going down.
     // enableForcedReload: true,
@@ -1721,7 +1713,7 @@ var config = {
     //     'toolbar.noAudioSignalTitle', // shown when a broken mic is detected
     //     'toolbar.noisyAudioInputTitle', // shown when noise is detected for the current microphone
     //     'toolbar.talkWhileMutedPopup', // shown when user tries to speak while muted
-    //     'transcribing.failedToStart', // shown when transcribing fails to start
+    //     'transcribing.failed', // shown when transcribing fails
     // ],
 
     // List of notifications to be disabled. Works in tandem with the above setting.
